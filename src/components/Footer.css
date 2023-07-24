@@ -1,0 +1,48 @@
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: gray ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    height: 100%;
+}
+.socials h5 {
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icon a{
+    margin: 0;
+    padding-top: 5px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0px;
+}
+.devLogo{
+    padding-right: 10px;
+}
