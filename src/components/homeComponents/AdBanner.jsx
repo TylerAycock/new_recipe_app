@@ -1,20 +1,22 @@
 import React from "react";
 import salmon from "../../assets/salmon.jpg";
 import { Link } from "react-router-dom";
+import './AdBanner.css'
 
 const AdBanner = () => {
   return (
-    <div
+    <div className="img-container"
       style={{
-        background: `linear-gradient(
+        background: `
+        linear-gradient(
           190deg,
           rgba(0, 0, 0, 0.8),
           rgba(0, 0, 0, 0.8)),
-          url(${salmon})`,
+        url(${salmon})`,
         backgroundSize: "cover",
       }}
     >
-      <div>
+      <div className="indiv-recipe">
         <h3>New Recipe</h3>
         <h1>Pineapple Salmon</h1>
         <h3>

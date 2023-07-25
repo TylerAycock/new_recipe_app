@@ -1,0 +1,43 @@
+.img-container{
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indiv-recipe{
+    width: 55%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.indiv-recipe h1{
+    color: orange;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.indiv-recipe h3 {
+    font-size: x-large;
+}
+
+.blue-btn{
+    background-color: teal;
+    padding: 0.5rem;
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.blue-btn:hover{
+    cursor: pointer;
+    background-color: rgb(4, 159, 159);
+    border: 1px solid teal
+}
+
