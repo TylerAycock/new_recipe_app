@@ -33,18 +33,12 @@ const DetailScreen = () => {
   return (
     <section>
       <div
-        className="img-container"
+        className="recipe-img-container"
         style={{
-          background: `
-          linear-gradient(
-            190deg,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)),
-        url(${recipeDetails.image_url})`,
-          backgroundSize: "cover",
+          backgroundImage: `url(${recipeDetails.image_url})`,
         }}
       >
-        <h1>{recipeDetails.recipe_name}</h1>
+        <h1 className="recipe-name">{recipeDetails.recipe_name}</h1>
       </div>
       <div className="recipe-details-container">
         <section className="time-ingredients-card">

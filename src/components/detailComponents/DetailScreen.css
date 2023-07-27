@@ -1,13 +1,17 @@
-.img-container{
-    height: 400px;
+.recipe-img-container{
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.5);
+    height: 400px;
     
 }
 
-.img-container h1{
+.recipe-name{
     color: orange;
     font-size: 4em;
     font-weight: bold;
