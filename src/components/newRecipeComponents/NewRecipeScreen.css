@@ -1,0 +1,93 @@
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    height: 80vh;
+    gap: 25px;
+}
+
+#form-container h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#form-container form {
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-container form input{
+    padding: 5px;
+}
+#form-container form input::placeholder{
+    color: gray;
+}
+
+.part-one{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.part-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.part-three{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.part-three input{
+    width: 6rem;
+}
+
+.part-four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ing-qty-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 10px;
+}
+
+.add-btn{
+    background-color: orange;
+    padding: 8px;
+    border: none;
+    color: white;
+}
+
+.save-btn{
+    background-color: teal;
+    color: white;
+    padding: 8px;
+    width: 6rem;
+    border: none;
+}
+
+.instructions{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.add-btn:hover,
+.save-btn:hover{
+    cursor: pointer;
+}

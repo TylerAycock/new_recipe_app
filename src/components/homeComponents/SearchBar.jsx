@@ -6,9 +6,7 @@ import RecipeCard from "../newRecipeComponents/RecipeCard";
 const SearchBar = ({ theRecipes }) => {
   const [searchInput, setSearchInput] = useState("");
 
-  const changeHandler = (e) => {
-    setSearchInput(e.target.value);
-  };
+  const changeHandler = (e) => {setSearchInput(e.target.value);};
 
   let recipeDisplay = theRecipes
     .filter((recipe) => {
@@ -24,11 +22,7 @@ const SearchBar = ({ theRecipes }) => {
     <div className="search">
       <div className="search-bar">
         <img src={search} alt="" className="search-icon" />
-        <input
-          type="text"
-          onChange={changeHandler}
-          placeholder="Search for a Recipe"
-        />
+        <input type="text" onChange={changeHandler} placeholder="Search for a Recipe"/>
       </div>
       <div className="recipes-container">{recipeDisplay}</div>
     </div>

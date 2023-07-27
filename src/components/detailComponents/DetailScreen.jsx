@@ -26,8 +26,8 @@ const DetailScreen = () => {
   }, []);
 
 
-  let individualIngredients = recipeDetails.ingredients?.map((ingredient) => {
-    return <li>{ingredient.quantity} {ingredient.ingredient}</li>;
+  let individualIngredients = recipeDetails.ingredients?.map((ingredient, index) => {
+    return <li key={index}>{ingredient.quantity} {ingredient.ingredient}</li>;
   });
 
   return (
@@ -36,11 +36,11 @@ const DetailScreen = () => {
         className="img-container"
         style={{
           background: `
-        linear-gradient(
-          190deg,
-          rgba(0, 0, 0, 0.8),
-          rgba(0, 0, 0, 0.8)),
-        url(${salmon})`,
+          linear-gradient(
+            190deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url(${recipeDetails.image_url})`,
           backgroundSize: "cover",
         }}
       >
