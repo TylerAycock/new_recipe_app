@@ -167,8 +167,8 @@ const NewRecipeScreen = () => {
               <button className="add-btn" onClick={addIngredient}>
                 Add Another
               </button>
-              <Field
-                type="textarea"
+              <textarea
+                
                 rows="4"
                 cols="50"
                 name="instructions"
